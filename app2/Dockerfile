@@ -1,10 +1,18 @@
-FROM python:3.8
+# Use Bun's official Alpine-based image
+FROM jarredsumner/bun:edge-alpine
 
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy package.json and install dependencies (in this case, none)
+COPY package.json ./
+RUN bun install
+
+# Copy the application code into the container
+COPY . .
+
+# Expose the port (matching the one used in the app)
 EXPOSE 8081
-WORKDIR /app2
 
-COPY . ./
-
-RUN pip install -r requirements.txt
-
-CMD ["python", "app.py"]
+# Start the Bun server
+CMD ["bun", "run", "app.js"]

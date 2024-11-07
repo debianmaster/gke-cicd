@@ -1,0 +1,11 @@
+{
+    "name": "simple-bun-app",
+    "version": "1.0.0",
+    "description": "A simple Bun.js app",
+    "main": "app.js",
+    "scripts": {
+      "start": "bun run app.js"
+    },
+    "dependencies": {}
+  }
+  
