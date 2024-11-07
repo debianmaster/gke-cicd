@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/gcp-workshop-by-zelar/gke-repo/welcome', './gke/app' ]
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/gcp-workshop-by-zelar/gke-repo/welcome', './app' ]
   id: 'Build Docker Image'
 
   # images:
