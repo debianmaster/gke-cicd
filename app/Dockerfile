@@ -12,7 +12,7 @@ RUN bun install
 COPY . .
 
 # Expose the port (matching the one used in the app)
-EXPOSE 8081
+EXPOSE 8080
 
 # Start the Bun server
 CMD ["bun", "run", "start"]
