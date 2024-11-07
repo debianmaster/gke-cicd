@@ -1,11 +1,14 @@
 {
-    "name": "simple-bun-app",
-    "version": "1.0.0",
-    "description": "A simple Bun.js app",
-    "main": "app.js",
-    "scripts": {
-      "start": "bun run app.js"
-    },
-    "dependencies": {}
+  "name": "app2",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
   }
-  
+}

@@ -1,5 +1,5 @@
 # Use Bun's official Alpine-based image
-FROM jarredsumner/bun:edge-alpine
+FROM oven/bun:canary-alpine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8081
 
 # Start the Bun server
-CMD ["bun", "run", "app.js"]
+CMD ["bun", "run", "start"]
