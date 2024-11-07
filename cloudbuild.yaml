@@ -3,8 +3,6 @@ steps:
   args: ['build', '-t', 'us-central1-docker.pkg.dev/gcp-workshop-by-zelar/gke-repo/welcome', './app' ]
   id: 'Build Docker Image'
 
-  # images:
-  # - 'us-central1-docker.pkg.dev/gcp-workshop-by-zelar/gke-repo/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/gcp-workshop-by-zelar/gke-repo/welcome' ]
